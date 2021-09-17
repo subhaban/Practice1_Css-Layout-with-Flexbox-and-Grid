@@ -1,0 +1,157 @@
+* {
+    box-size:border-box;
+  }
+  
+  body {
+    margin:0;
+    background:#000;
+    color:#fff;
+  }
+  
+  /* Header Styles */
+  
+  header {
+    background:#333;
+    font: 100 1rem/1.2 sans-serif;
+  }
+  
+  .logo-combo {
+    display:flex;
+    align-items:center;
+    margin: auto;
+    
+  }
+  
+  .logo {
+    display:block;
+    margin-right:2rem;
+    max-width: 15%;
+    width: 15%;
+    
+  }
+  
+    
+  
+  header h1 {
+    color:#cba;
+    margin: auto;
+    font-size: clamp(1.5rem, 5vw, 2.5rem);
+    
+  }
+  
+  nav {
+    background:#222;
+  }
+  
+  nav ul {
+    display:flex;
+    list-style:none;
+    justify-content:space-between;
+    padding:0;
+    margin:0;
+  }
+  
+  nav a {
+    display:block;
+    margin:1rem;
+    color:white;
+    text-decoration:none;
+  }
+  
+  
+  /* Main Layout */
+  
+  main  h1 {
+    margin:0;
+    font-size:2rem;
+    color: rgb(240, 182, 22);
+   text-align: center;
+  }
+  
+  main img {
+    object-fit:cover;
+    width:100%;
+    height: 100%;
+   
+  }
+  
+  /* The magic happens here - mostly explictly  */
+  main {
+    display:grid;
+    grid-gap: .5rem;
+grid-template-columns: .6fr 1fr 1fr .6fr;
+grid-template-rows: repeat(3,300px);
+
+
+  }
+  .f{
+      grid-column-start: 2;
+      grid-column-end: 4;
+      grid-row-start: 2;
+      grid-row-end: 3;
+    justify-content: space-between;
+      padding:2px;
+      
+  }
+
+  
+
+footer{
+    display:flex;
+    align-items:center;
+    background-color: #333; 
+    color: #cba;
+    margin-top: 1rem;
+  } 
+
+
+}
+.foot{
+
+    margin: auto;
+    font-size: clamp(1.5rem, 5vw, 2.5rem);
+    justify-content: space-evenly;
+    padding: 1.5rem;;
+
+}
+   /* grid-template-areas: 
+    "a b c d" 
+    "e f f g" 
+    "h i j k"; 
+  }/
+  
+ /* .a {
+    grid-area: a;
+  }
+  .b {
+    grid-area: b;
+  }
+  .c {
+    grid-area: c;
+  }
+  .d {
+    grid-area: d;
+  }
+  .e {
+    grid-area: e;
+  }
+  .f {
+    grid-area: f;
+    padding:1rem;
+    /*transform: rotate(-5deg);*/
+ /* }
+  .g {
+    grid-area: g;
+  }
+  .h {
+    grid-area: h;
+  }
+  .i {
+    grid-area: i;
+  }
+  .j {
+    grid-area: j;
+  }
+  .k {
+    grid-area: k;
+  } */
